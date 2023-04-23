@@ -1,6 +1,7 @@
 import Profile from "./Profile";
 import users from "../user.json";
-
+import Statistics from "./Statistics";
+import data from "../data.json";
 
 export const App = () => {
   return (
@@ -22,7 +23,8 @@ export const App = () => {
           followers={users[0].stats.followers}
           views={users[0].stats.views}
           likes={users[0].stats.likes}
-        />
+      />
+        <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
