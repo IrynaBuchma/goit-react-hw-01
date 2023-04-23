@@ -20,9 +20,7 @@ export const App = () => {
           tag={users[0].tag}
           location={users[0].location}
           avatar={users[0].avatar}
-          followers={users[0].stats.followers}
-          views={users[0].stats.views}
-          likes={users[0].stats.likes}
+          stats={users[0].stats}
       />
         <Statistics title="Upload stats" stats={data} />
     </div>
