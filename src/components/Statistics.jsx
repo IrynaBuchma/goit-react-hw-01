@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const getColorById = () => {
     const randomColor = Math.floor(Math.random() * 16777215)
@@ -32,5 +32,9 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-    stats: propTypes.array.isRequired, 
-};
+    stat: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired
+    })
+}

@@ -35,11 +35,8 @@ export default function Profile({ username, tag, location, avatar = defaultImage
 };
 
 Profile.propTypes = {
-    username: PropTypes.string,
-    tag:PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
-    followers: PropTypes.number,
-    views:PropTypes.number,
-    likes: PropTypes.number,
+    username: PropTypes.string.isRequired,
+    tag:PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired,
 }
