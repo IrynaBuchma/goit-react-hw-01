@@ -1,0 +1,49 @@
+.friends {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+  width: 370px;
+}
+
+.friends__list {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+.friends__item {
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #347f7fed;
+
+  background-color: rgb(252, 221, 237);  
+}
+
+.friends__status {
+  width: 30px;
+  margin-right: 20px;
+  height: 30px;
+  border-radius: 50%;
+}
+.true {
+  background-color: green;
+}
+.false {
+  background-color: red;
+}
+
+.friends__avatar {
+  width: 100px;
+  margin-right: 10px;
+}
+.friends__name {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #524a4d;
+}
