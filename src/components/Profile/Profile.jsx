@@ -3,7 +3,7 @@ import defaultImage from '../../images/default.webp';
 import PropTypes from 'prop-types'; // ES6
 
 
-export default function Profile({ username, tag, location, avatar = defaultImage, stats = 'undefined' }) {
+export default function Profile({ username, tag, location, avatar = defaultImage, stats }) {
     return (
             <div className={css.profile}>
             <div className={css.description}>
